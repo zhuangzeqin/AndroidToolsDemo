@@ -39,6 +39,8 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     //强大而灵活的RecyclerView Adapte
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    //FastSharedPreferences是一个Android平台的高性能key-value组件。读写性能远超SharedPreferences
+    implementation 'com.jeremyliao:fast-sharedpreferences:0.0.1'
     // butterknife注解框架
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
