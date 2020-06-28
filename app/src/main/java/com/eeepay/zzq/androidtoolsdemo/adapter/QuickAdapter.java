@@ -35,7 +35,7 @@ public final class QuickAdapter extends BaseQuickAdapter<TestModel, BaseViewHold
         //可链式调用赋值
         baseViewHolder.setText(R.id.tv_title, testModel.getName()).
                 setText(R.id.tv_content, testModel.getContent()).
-                setImageResource(R.id.iv_img, R.mipmap.ic_launcher);
+                setImageResource(R.id.iv_img, R.mipmap.ic_launcher).addOnClickListener(R.id.iv_img);
         //   // 加载网络图片
         //      Glide.with(mContext).load(item.getUserAvatar()).crossFade().into((ImageView) helper.getView(R.id.iv_img));
         //获取当前条目position

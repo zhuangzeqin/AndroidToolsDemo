@@ -23,7 +23,7 @@ public final class FastSharedPreferencesTools {
     private static volatile EnhancedEditor mEdit = null;//EnhancedEditor 实例
     /* ------注释说明---私有的构造函数----- */
     private FastSharedPreferencesTools() {
-        checkFastSharedPreferences();
+//        checkFastSharedPreferences();
     }
 
     /**
@@ -221,6 +221,7 @@ public final class FastSharedPreferencesTools {
     public void init(Context context) {
         //FastSharedPreferences 基本用法
         FastSharedPreferences.init(context);
+        checkFastSharedPreferences();
     }
 
     /**
