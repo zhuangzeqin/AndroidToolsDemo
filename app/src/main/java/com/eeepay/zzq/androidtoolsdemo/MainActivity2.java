@@ -5,6 +5,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ListView;
 
 import com.eeepay.zzq.androidtoolsdemo.adapter.DividerItemDecoration;
 import com.eeepay.zzq.androidtoolsdemo.adapter.MultiDelegateAdapter;
@@ -29,6 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ListView mListView ;
         bind = ButterKnife.bind(this);
         initData();
         MultiDelegateAdapter multiDelegateAdapter = new MultiDelegateAdapter(datas);

@@ -10,6 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- 全局Context提供者 -->
+        <provider
+            android:name=".utils.ApplicationContextProvider"
+            android:authorities="${applicationId}.contextprovider"
+            android:exported="false" />
         <activity android:name=".MainActivity3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
